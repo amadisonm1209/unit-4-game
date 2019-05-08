@@ -1,0 +1,56 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500|Sofia" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="image-container">
+            <img class="dark-crystal" src="assets/images/1_j75K4w5SohQk_PFO-iGTww.jpeg" alt="dark crystal movie" style="width:50%" />
+        </div>
+        <h1>The Crystal Collector Game</h1>
+    </header>
+    <div class="wrapper">
+        <section class="instructions">
+            <p> Just like Jim Henson, Walter White, and most ABC Bachelors, your mind in this game should be on the
+                crystals.</p>
+            <p> Each game, you will be given a different random target number and your goal is to hit that number by
+                clicking on the crystal skulls below. No one knows the value of the magical crystal skulls ahead of
+                time,
+                so click wisely.</p>
+            <p> Win the game by hitting the target number, lose the game by going over. </p>
+        </section>
+
+        <section>
+            <h3>Target Number:</h3><span id="target-number"></span>
+        </section>
+        <section>
+            <h2>Wins: <span id="wins"></span>
+                <br> Losses: <span id="losses"></span> </h2>
+        </section>
+        <div class="crystals">
+            <div class="crystal-image"> <img src="assets/images/2-Inch-smelt-blue-obsidian-Crystal-Skull-handmade-Healing-Crystal-Feng-Shui-Carved-Skeleten-grass-Statues.jpg_640x640.jpg"
+                    alt="crystal" style="max-width: 100%; height:auto;" /></div>
+            <div class="crystal-image"><img src="assets/images/images.jpeg" alt="crystal" style="max-width: 100%; height:auto;"  /></div>
+            <div class="crystal-image"><img src="assets/images/93044749bfd05efc_large.jpg" style="max-width: 100%; height:auto;"  alt="crystal" /></div>
+            <div class="crystal-image"><img src="assets/images/617kvIa-NZL._SX466_.jpg" style="max-width: 100%; height:auto;"  alt="crystal" /></div>
+        </div>
+        <div>
+            <h3>Your Score:</h3>
+            <div id="current-score"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="/assets/javascript/game.js"></script>
+</body>
+
+</html>
