@@ -4,6 +4,7 @@
 
 .image-container{
     display: flex;
+    flex: row wrap;
 }
 .dark-crystal{
     display: block;
@@ -11,46 +12,78 @@
     width: 50%;
 }
 body{
-    margin: 0 auto;
+    margin: 25px auto;
 }
 header{
     border-bottom: solid 5px rebeccapurple;
     margin-top: 15px;
     background-color: black;
 }
-h1,
+
 h2,
 h3{
     font-family: 'Sofia', cursive;
     font-size: 20px;
+    margin: 25px;
 }
 h1{
-    font-size: 30px;
+    font-family: 'Sofia', cursive;
+    font-size: 40px;
     padding: 15px;
     text-align: center;
-    color: azure;
+    color: gainsboro;
 }
 p{
     font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     padding: 10px;
     line-height: 24px;
+    text-align: center;
+    word-wrap: wrap;
+    
 
+}
+.bold{
+    font-weight: bolder;
 }
 .wrapper{
     display: flex;
     flex-direction: column;
-    width: 960px;
+    flex-wrap: wrap;
+    max-width: 960px;
     margin: 0 auto;
 }
 .instructions{
+    margin: 25px;
+   
 }
+
 .crystals{
     display: flex;
     flex-wrap: wrap;
 }
 .crystal-image{
-    flex: 1 24%;
+    flex: 1 1 0;
+    max-height: 200px;
+}
+.scoreboard{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: solid 2px rebeccapurple;
+    padding: 10px;
+}
+.third{
+    flex: 1 1 0;
+    margin: auto;
 }
 
+@media screen and (max-width: 640px){
+   .third{
+       flex: 100%;
+   }
+   .crystal-image{
+       flex: 100%;
+       margin-left: 125px;
+   }
+}
 
