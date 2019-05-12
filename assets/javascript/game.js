@@ -1,13 +1,34 @@
 // Global Variables wins, loses, target score, your score
-var randomNum = generateRandom();
+const wins = 0;
+const loses = 0;
+const targetScore = 0;
+const currentScore = 0;
+const images = ["assets/images/s-l300.jpg" , "assets/images/images (1).jpeg" , "assets/images/617kvIa-NZL._SX466_.jpg", "assets/images/images (2).jpeg"];
 
-//array of crystal opject (to loop through)
-
+const crystal
 //dynamically create crystals on the page (one object per crystal)
    //each crystal needs a score, an image, [aka a string holding the path to the image - which is saved in a folder in your project] an object with all of this info (aka collection of key value parts)
+function createCrystal () {
+   for (var i=0; i < 4; i++) {
+      var crystal = $("<div>");
+      crystal.addClass("crystal-image");
+      $(".crystals").append(crystal);
+   } 
+};
 
-// Random number Function:
-function generateRandom()
+createCrystal();
+
+// function assignImage (){
+//    for (var i=0; i < 4; i++){
+//       var crystalImage = $("<img/>");
+//       crystalImage.attr("src", images[0]);
+//       $(".crystal-image").append(crystalImage);
+//    }
+// }
+// assignImage();
+// assignImage();
+// // Random number Function:
+// function generateRandom()
    //something with math...
    //return a random number
 
