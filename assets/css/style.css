@@ -17,21 +17,20 @@ body{
 header{
     border-bottom: solid 5px rebeccapurple;
     margin-top: 15px;
-    background-color: black;
 }
 
 h2,
 h3{
-    font-family: 'Sofia', cursive;
+    font-family: 'Sail', cursive;
     font-size: 20px;
     margin: 25px;
 }
 h1{
-    font-family: 'Sofia', cursive;
+    font-family: 'Sail', cursive;
     font-size: 40px;
     padding: 15px;
     text-align: center;
-    color: gainsboro;
+    color: rebeccapurple;
 }
 p{
     font-family: 'Quicksand', sans-serif;
@@ -75,6 +74,7 @@ p{
 .third{
     flex: 1 1 0;
     margin: auto;
+    text-align: center;
 }
 
 @media screen and (max-width: 640px){
