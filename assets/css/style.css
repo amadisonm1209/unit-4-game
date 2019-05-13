@@ -64,6 +64,7 @@ p{
 .crystal-image{
     flex: 1 1 0;
     max-height: 200px;
+
 }
 .scoreboard{
     display: flex;
@@ -77,6 +78,18 @@ p{
     text-align: center;
 }
 
+
+
+@media screen and (max-width: 768px){
+    .third{
+        flex: 100%;
+    }
+    .crystal-image{
+        margin-left: 75px;
+        margin-right: 50px;
+    }
+ }
+ 
 @media screen and (max-width: 640px){
    .third{
        flex: 100%;
